@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableWithoutFeedback, View, Image, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
   console.log("App executed");
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text> Hello React Native</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("Image tapped")}>
+      <TouchableOpacity onPress={() => console.log("Image tapped")}>
         <Image 
           source={{
           
@@ -18,7 +18,7 @@ export default function App() {
           }} 
         />
 
-      </TouchableWithoutFeedback>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
